@@ -1,0 +1,10 @@
+node_modules/
+daily-doodle/node_modules/
+daily-doodle/.next/
+daily-doodle/out/
+daily-doodle/build/
+.DS_Store
+*.log
+.env*
+.vercel
+*.tsbuildinfo
