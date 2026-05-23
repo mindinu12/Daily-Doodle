@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Doodle</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <h1>Daily Doodle</h1>
+        <p>Macondo Edition: Tasks, Style & Games</p>
+    </header>
+
+    <main class="app-container">
+       
+        <section class="card customizer-section">
+            <h2>Style Inspiration</h2>
+            <div class="avatar-frame">
+                <img id="style-image" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=400&q=80" alt="Style Inspiration">
+                <div id="image-loader" class="loader hidden">Loading Look...</div>
+            </div>
+            <div class="controls">
+                <button id="next-style-btn">Roll New Look</button>
+            </div>
+        </section>
+
+        
+        <section class="card tasks-section">
+            <h2>Today's Quests</h2>
+            <ul id="task-list">
+                <li><input type="checkbox" id="t1"> <label for="t1">Commit code to your Macondo repository</label></li>
+                <li><input type="checkbox" id="t2"> <label for="t2">Score 15 points in the mini-game</label></li>
+                <li><input type="checkbox" id="t3"> <label for="t3">Sketch a new pixel design</label></li>
+            </ul>
+        </section>
+
+        
+        <section class="card game-section">
+            <h2>Catch the Oodle!</h2>
+            <div class="game-stats">
+                <p>Score: <span id="score-val">0</span></p>
+                <p>Time Left: <span id="timer-val">30</span>s</p>
+                <p>High Score: <span id="high-score-val">0</span></p>
+            </div>
+            <div id="game-canvas">
+                <button id="start-game-btn">Start Game</button>
+                <div id="target-oodle" class="hidden">🎯</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
